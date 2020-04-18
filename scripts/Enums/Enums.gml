@@ -6,7 +6,9 @@ enum TILE_TYPES {
 enum BUILDINGS {
 	HOUSE,
 	PROSPECT,
-	MINE
+	MINE,
+	TOWN_HALL,
+	TREE
 }
 
 enum RESOURCES {

@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if instance_exists(o_build_menu) {	
+	return
+}
+
 var wood_percentage = 10; // up to 90% to spawn new woods
 
 for (var dx = -1; dx <= 1; dx++) {

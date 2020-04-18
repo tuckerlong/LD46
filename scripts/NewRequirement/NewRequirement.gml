@@ -4,5 +4,5 @@ with (o_monster) {
 	prev_amount = require_amount;
 	turns_left = 10;
 	
-	require_string = GetResourceName(requiring);
+	require_string = GetResourceName(requiring) + " x" + string(require_amount);
 }

@@ -7,6 +7,10 @@ switch (building) {
 		return s_building_prospect;
 	case BUILDINGS.MINE:
 		return s_building_mine;
+	case BUILDINGS.TOWN_HALL:
+		return s_building_town_hall;
+	case BUILDINGS.TREE:
+		return s_building_tree;
 }
 
 return undefined;

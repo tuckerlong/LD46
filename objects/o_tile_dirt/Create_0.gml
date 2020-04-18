@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-buildings = [BUILDINGS.HOUSE, BUILDINGS.PROSPECT, BUILDINGS.MINE];
+buildings = [BUILDINGS.HOUSE, BUILDINGS.PROSPECT, BUILDINGS.MINE, BUILDINGS.TREE];
 
 metal_reveal = false;
 metal = noone;

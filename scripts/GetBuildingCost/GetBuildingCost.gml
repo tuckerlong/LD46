@@ -7,6 +7,8 @@ switch (building) {
 		return [[RESOURCES.PEOPLE, 5], [RESOURCES.WOOD, 25]];
 	case BUILDINGS.MINE:
 		return [[RESOURCES.PEOPLE, 50], [RESOURCES.WOOD, 100]];
+	case BUILDINGS.TREE:
+		return [[RESOURCES.PEOPLE, 15]];
 }
 
 return [];
