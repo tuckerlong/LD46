@@ -1,0 +1,16 @@
+enum TILE_TYPES {
+	WOOD,
+	IRON_ORE	
+}
+
+enum BUILDINGS {
+	HOUSE,
+	PROSPECT,
+	MINE
+}
+
+enum RESOURCES {
+	PEOPLE,
+	WOOD,
+	COPPER
+}
