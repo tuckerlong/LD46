@@ -9,4 +9,4 @@ switch (resource_name) {
 		return "Copper";
 }
 
-return "";
+return "None";

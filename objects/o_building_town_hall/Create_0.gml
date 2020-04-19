@@ -5,4 +5,6 @@
 event_inherited();
 
 turns_left = 2;
+turns_reset = 2;
+
 building = BUILDINGS.TOWN_HALL;

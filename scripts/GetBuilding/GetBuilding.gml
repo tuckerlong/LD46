@@ -11,6 +11,8 @@ switch (building) {
 		return o_building_town_hall;
 	case BUILDINGS.TREE:
 		return o_building_tree;
+	case BUILDINGS.LUMBERMILL:
+		return o_building_lumbermill;
 }
 
 return undefined;

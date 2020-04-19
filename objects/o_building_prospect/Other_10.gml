@@ -4,6 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-tile.metal_reveal = true;
+
+var icon = instance_create_depth(tile.x, tile.y + tile.sprite_height/2 - 8, tile.depth - 1, o_metal_icon);
+icon.metal = tile.metal;
+
 tile.building = noone;
 instance_destroy();

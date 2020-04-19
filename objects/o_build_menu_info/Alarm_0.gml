@@ -1,10 +1,23 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-text_width = string_width(text);
+if typeof(text) == "string" {
+	text = [text];	
+}
+
+text_width = 0;
+text_height = 0
+
+for (var i = 0; i < array_length_1d(text); i++) {
+	if string_width(text[i]) > text_width {
+		text_width = string_width(text[i]);	
+	}
+
+	text_height += string_height(text[i]) + 5;
+}
 
 x -= text_width/2;
-y -= string_height(text)/2;
+y -= text_height;
 
 image_xscale = text_width;
-image_yscale = string_height(text);
+image_yscale = text_height;

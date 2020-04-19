@@ -7,8 +7,8 @@ event_inherited();
 turns_left -= 1;
 
 if turns_left <= 0 {
-	AddResource(RESOURCES.WOOD, 1);
+	AddResource(RESOURCES.WOOD, resource_amount);
 	turns_left = turns_reset;
 }
 
-text = "Generating 1 wood every " + string(turns_reset) + " turns. (" + string(turns_left) + " turn(s) left)";
+text = "Generating " + string(resource_amount) + " wood every " + string(turns_reset) + " turns. (" + string(turns_left) + " turn(s) left)";

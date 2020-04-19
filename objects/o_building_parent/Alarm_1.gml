@@ -3,5 +3,9 @@
 
 if building != noone {
 	info = instance_create_depth(x, y - sprite_height/2 - 10, depth - 1, o_build_menu_info);
-	info.text = GetBuildingInfo(building);
+	if text == noone {
+		info.text = GetBuildingInfo(building);
+	} else {
+		info.text = text;
+	}
 }

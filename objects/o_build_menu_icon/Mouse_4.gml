@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if tile == noone {
+if tile == noone or instance_exists(o_options)  {
 	return;	
 }
 

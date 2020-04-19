@@ -8,5 +8,7 @@ turns_left -= 1;
 
 if turns_left <= 0 {
 	AddResource(RESOURCES.PEOPLE, 1);
-	turns_left = 2;
+	turns_left = turns_reset;
 }
+
+text = "Generating 1 person every " + string(turns_reset) + " turns. (" + string(turns_left) + " turn(s) left)";

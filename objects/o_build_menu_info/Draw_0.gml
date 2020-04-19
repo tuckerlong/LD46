@@ -7,4 +7,6 @@ if alarm[0] {
 
 draw_self();
 
-draw_text(x, y, text);
+for (var i = 0; i < array_length_1d(text); i++) {
+	draw_text(x, y + i * (string_height(text[i]) + 5), text[i]);
+}

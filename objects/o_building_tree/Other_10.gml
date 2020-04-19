@@ -6,6 +6,8 @@ event_inherited();
 
 turns_left -= 1;
 
+text = string(turns_left) + " turn(s) left to build.";
+
 if turns_left <= 0 {
 	var prev_tile = tile;
 	

@@ -2,13 +2,15 @@ var building = argument0;
 
 switch (building) {
 	case BUILDINGS.HOUSE:
-		return [[RESOURCES.PEOPLE, 10]];
+		return [[RESOURCES.PEOPLE, 2], [RESOURCES.WOOD, 10]];
 	case BUILDINGS.PROSPECT:
-		return [[RESOURCES.PEOPLE, 5], [RESOURCES.WOOD, 25]];
+		return [[RESOURCES.PEOPLE, 5], [RESOURCES.WOOD, 5]];
 	case BUILDINGS.MINE:
-		return [[RESOURCES.PEOPLE, 50], [RESOURCES.WOOD, 100]];
+		return [[RESOURCES.PEOPLE, 25], [RESOURCES.WOOD, 50]];
 	case BUILDINGS.TREE:
-		return [[RESOURCES.PEOPLE, 15]];
+		return [[RESOURCES.PEOPLE, 10]];
+	case BUILDINGS.LUMBERMILL:
+		return [[RESOURCES.PEOPLE, 20], [RESOURCES.WOOD, 75], [RESOURCES.COPPER, 50]];
 }
 
 return [];
