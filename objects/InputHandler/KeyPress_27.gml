@@ -4,5 +4,8 @@
 if instance_exists(o_options) {
 	instance_destroy(o_options)
 } else {
-	instance_create_depth(room_width/2, room_height/2, depth - 100, o_options);
+	var dx = camera_get_view_x(view_camera[0]) + room_width/2;
+	var dy = camera_get_view_y(view_camera[0]) + room_height/2;
+	
+	instance_create_depth(dx, dy, depth - 100, o_options);
 }

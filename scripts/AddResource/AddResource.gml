@@ -9,5 +9,6 @@ if is_undefined(data) {
 }
 
 data[? "total"] = data[? "total"] + amount;
+data[? "generated"] = data[? "generated"] + amount;
 
 return;
